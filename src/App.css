@@ -1,0 +1,46 @@
+.app-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.title {
+  font-size: clamp(3rem, 15vw, 8rem);
+  text-align: center;
+  letter-spacing: 0.2rem;
+  text-shadow: 0 0 20px rgba(0,0,0,1);
+  opacity: 0.8;
+  text-transform: uppercase;
+  margin-bottom: -1rem;
+}
+
+.subtitle {
+  font-size: clamp(1rem, 4vw, 2rem);
+  text-align: center;
+  opacity: 0.6;
+  letter-spacing: 0.1rem;
+  text-shadow: 0 0 10px rgba(0,0,0,1);
+}
+
+.spawn-img {
+  position: absolute;
+  height: auto;
+  pointer-events: none;
+  transform-origin: center;
+  z-index: 100;
+  will-change: transform, left, top;
+}

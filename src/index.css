@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+*:focus, *:active, *:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+body {
+  background-color: #111;
+  color: #fff;
+  font-family: 'Bangers', cursive;
+  overflow: hidden;
+  user-select: none;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+}
